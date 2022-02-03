@@ -32,3 +32,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+
+# 2&5  second and fifth answers in my-project folder 
+
+Ans :  how to run it 
+        1) npm install
+        2) npm run dev 
+Second question is solved in index page localhost:3000
+
+Fifth question solved in search page localhost:3000/search
+
+Framwork use to solve the problem : Next js, Tailwind 
+# second_and_Fifith_answers
