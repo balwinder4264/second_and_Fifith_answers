@@ -7,8 +7,29 @@ import { CalendarIcon } from '@heroicons/react/solid'
 import "react-datepicker/dist/react-datepicker.css";
 export default function Home() {
   const [startdate, setStartDate] = useState(new Date());
+  const test = () => {
+    // What is wrong with the following code?
+
+    var server_echo;
+    var json = {
+      json: JSON.stringify({
+        a: 1,
+        b: 2
+      }),
+      delay: 3
+    };
+
+    //json strigyfy twice
+    console.log("First json =>", json)
+    let body = 'json=' + encodeURIComponent(JSON.stringify(json.json)) + '&delay=' + json.delay;
+
+    console.log("body=>", body)
+
+
+  }
   return (
     <div className=' flex justify-center h-screen items-center font-Lato italic'>
+      <button onClick={() => test()}>Hit me </button>
       <form class="w-full  bg-[#1779DB] p-6 text-white m-40">
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full px-3 ">
@@ -23,12 +44,12 @@ export default function Home() {
             <label class="block uppercase tracking-wide mb-2" for="grid-first-name">
               Date of Birth
             </label>
-            <div className=" relative rounded-md shadow-sm">
-              <div className=" flex absolute z-40 text-gray-400 ">
+            <div className=" relative rounded-md shadow-sm ">
+              <div className=" flex absolute z-40  ">
                 <CalendarIcon className="h-11 w-7 " aria-hidden="true" />
               </div>
               <div>
-                <DatePicker selected={startdate} onChange={(date) => setStartDate(date)} className=' w-full text-gray-700 pl-10' />
+                <DatePicker selected={startdate} onChange={(date) => setStartDate(date)} className=' w-full border-white  bg-[#1779DB] pl-10' />
               </div>
             </div>
           </div>
