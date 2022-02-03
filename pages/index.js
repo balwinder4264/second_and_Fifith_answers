@@ -11,11 +11,11 @@ export default function Home() {
     <div className=' flex justify-center h-screen items-center font-Lato italic'>
       <form class="w-full  bg-[#1779DB] p-6 text-white m-40">
         <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full px-3">
+          <div class="w-full px-3 ">
             <label class="block uppercase tracking-wide   mb-2" for="grid-password">
               Your full given name :
             </label>
-            <input class="appearance-none block w-full text-black border  rounded py-3 px-4 mb-3 leading-tight " placeholder="John Doe" />
+            <input class="bg-[#1779DB] placeholder:text-white appearance-none block w-full  border  rounded py-3 px-4 mb-3 leading-tight " placeholder="John Doe" />
           </div>
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
@@ -36,7 +36,7 @@ export default function Home() {
             <label class="block uppercase tracking-wide   mb-2" for="grid-last-name">
               Country of residence or citizenship
             </label>
-            <input class="appearance-none block w-full border text-black rounded py-3 px-4 leading-tight " type="text" placeholder="Doe" />
+            <input class="bg-[#1779DB] placeholder:text-white appearance-none block w-full border  rounded py-3 px-4 leading-tight border-white " type="text" placeholder="Doe" />
           </div>
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
@@ -44,14 +44,14 @@ export default function Home() {
             <label class="block uppercase tracking-wide mb-2" >
               What school do you plan to attend?
             </label>
-            <input class="appearance-none block w-full border text-black rounded py-3 px-4 mb-3 leading-tight " type="password" placeholder="University of British Columbia" />
+            <input class="bg-[#1779DB] placeholder:text-white appearance-none block w-full border  rounded py-3 px-4 mb-3 leading-tight border-white " type="text" placeholder="University of British Columbia" />
           </div>
         </div>
         <div class="flex flex-wrap -mx-3 mb-2">
           <div class="w-full px-3">
             <label >Please take a moment to describe your intended area of study</label>
             <div class="mt-1">
-              <textarea rows="4" placeholder='Enter deatil here' class=" p-3 text-black  block w-full  rounded-md" />
+              <textarea rows="4" placeholder='Enter deatil here' class="bg-[#1779DB] placeholder:text-white p-3   block w-full  rounded-md border-white " />
             </div>
           </div>
         </div>
